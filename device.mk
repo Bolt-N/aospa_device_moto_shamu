@@ -210,7 +210,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.no_wait_for_card=1 \
-<<<<<<< HEAD
     persist.radio.data_no_toggle=1
 
 # never dexopt the MotoSignature

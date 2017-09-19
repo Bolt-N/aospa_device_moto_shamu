@@ -442,6 +442,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
+# Google Assistant
+PRODUCT_PROPERTY_OVERRIDES += \
+ ro.opa.eligible_device=true
+
 # facelock props
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.black_timeout=700 \

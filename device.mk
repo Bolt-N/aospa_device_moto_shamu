@@ -237,7 +237,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.ISP.debug.mask=0 \
     persist.camera.pproc.debug.mask=7 \
     persist.camera.stats.debug.mask=0 \
-    persit.camera.imglib.logs=1 \
+    persist.camera.imglib.logs=1 \
     persist.camera.mct.debug.mask=1 \
     persist.camera.sensor.debug=0 \
     vidc.debug.level=1
@@ -454,6 +454,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \
     persist.radio.ignore_ims_wlan=1 \
     persist.radio.data_con_rprt=1
+
+# Rich Communications Service is disabled
+PRODUCT_PROPERTY_OVERRIDES += \
+  persist.rcs.supported=0
+
+# Set missing telephony props
+PRODUCT_PROPERTY_OVERRIDES += \
+ persist.radio.sib16_support=1
 
 # OEM Unlock reporting
 ADDITIONAL_DEFAULT_PROPERTIES += \
